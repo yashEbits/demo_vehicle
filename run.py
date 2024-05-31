@@ -28,6 +28,7 @@ def display_data_with_images(data):
 
 # Streamlit app main function
 def main():
+    st.set_page_config("APMC DATA")
     st.title("Number Plates Data")
     st.write("Below is the data from the CSV file with images:")
 

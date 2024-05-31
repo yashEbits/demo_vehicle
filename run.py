@@ -3,11 +3,11 @@ import pandas as pd
 import os
 
 # Load the CSV file
-file_path = r'C:\Users\Dell\Desktop\Demo_vehicle\run_20240531_123010\number_plates.csv'  # Ensure this path is correct
+file_path = 'number_plates.csv'  # Use relative path
 df = pd.read_csv(file_path)
 
 # Base directory where the images are stored
-base_dir = r'C:\Users\Dell\Desktop\Demo_vehicle\run_20240531_123010'
+base_dir = 'run_20240531_123010'  # Current directory
 
 # Define a function to construct image paths
 def get_image_path(base_dir, id, img_type='frame'):
